@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background_screen">
+
+    <TextView
+        android:id="@+id/tvHello"
+        style="@style/title_main_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOne"
+        style="@style/title_header_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/one"
+        app:layout_constraintStart_toStartOf="@+id/tvHello"
+        app:layout_constraintTop_toBottomOf="@+id/tvHello" />
+
+    <TextView
+        android:id="@+id/tvTwo"
+        style="@style/title_header_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/two"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOne"
+        app:layout_constraintStart_toEndOf="@+id/tvOne"
+        app:layout_constraintTop_toTopOf="@+id/tvOne" />
+
+    <TextView
+        android:id="@+id/tvThree"
+        style="@style/title_header_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/three"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTwo"
+        app:layout_constraintStart_toEndOf="@+id/tvTwo"
+        app:layout_constraintTop_toTopOf="@+id/tvTwo" />
+
+    <TextView
+        android:id="@+id/tvFour"
+        style="@style/title_header_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/four"
+        app:layout_constraintBottom_toBottomOf="@+id/tvThree"
+        app:layout_constraintStart_toEndOf="@+id/tvThree"
+        app:layout_constraintTop_toTopOf="@+id/tvThree" />
+
+    <TextView
+        android:id="@+id/tvFive"
+        style="@style/title_header_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/five"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFour"
+        app:layout_constraintStart_toEndOf="@+id/tvFour"
+        app:layout_constraintTop_toTopOf="@+id/tvFour" />
+
+    <TextView
+        android:id="@+id/tvSix"
+        style="@style/title_header_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/six"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFive"
+        app:layout_constraintStart_toEndOf="@+id/tvFive"
+        app:layout_constraintTop_toTopOf="@+id/tvFive" />
+
+    <TextView
+        android:id="@+id/tvSeven"
+        style="@style/title_header_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/seven"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSix"
+        app:layout_constraintStart_toEndOf="@+id/tvSix"
+        app:layout_constraintTop_toTopOf="@+id/tvSix" />
+
+    <TextView
+        android:id="@+id/tvEight"
+        style="@style/title_header_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/eight"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSeven"
+        app:layout_constraintStart_toEndOf="@+id/tvSeven"
+        app:layout_constraintTop_toTopOf="@+id/tvSeven" />
+
+    <TextView
+        android:id="@+id/tvNine"
+        style="@style/title_header_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/nine"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEight"
+        app:layout_constraintStart_toEndOf="@+id/tvEight"
+        app:layout_constraintTop_toTopOf="@+id/tvEight" />
+
+    <TextView
+        android:id="@+id/tvTen"
+        style="@style/title_header_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/ten"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNine"
+        app:layout_constraintStart_toEndOf="@+id/tvNine"
+        app:layout_constraintTop_toTopOf="@+id/tvNine" />
+
+    <FrameLayout
+        android:id="@+id/flTable"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_margin="16dp"
+        android:background="@color/background_table">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/body_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/explaining"
+        app:layout_constraintEnd_toEndOf="@+id/tvTen"
+        app:layout_constraintStart_toStartOf="@+id/tvOne"
+        app:layout_constraintTop_toBottomOf="@+id/tvOne" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpTable"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/flTable"
+        app:layout_constraintEnd_toEndOf="@+id/flTable"
+        app:layout_constraintStart_toStartOf="@+id/flTable"
+        app:layout_constraintTop_toTopOf="@+id/flTable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
