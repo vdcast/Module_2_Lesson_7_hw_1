@@ -12,71 +12,39 @@ class MainActivity : AppCompatActivity() {
 
         val tables = getTables()
 
+        vpTable.adapter = TableAdapter(tables,supportFragmentManager)
+
         tvOne.setOnClickListener {
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.flTable,TableFragment.newInstance(tables[0]))
-                .commit()
+            vpTable.currentItem = 0
         }
         tvTwo.setOnClickListener {
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.flTable,TableFragment.newInstance(tables[1]))
-                .commit()
+            vpTable.currentItem = 1
         }
         tvThree.setOnClickListener {
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.flTable,TableFragment.newInstance(tables[2]))
-                .commit()
+            vpTable.currentItem = 2
         }
         tvFour.setOnClickListener {
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.flTable,TableFragment.newInstance(tables[3]))
-                .commit()
+            vpTable.currentItem = 3
         }
         tvFive.setOnClickListener {
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.flTable,TableFragment.newInstance(tables[4]))
-                .commit()
+            vpTable.currentItem = 4
         }
         tvSix.setOnClickListener {
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.flTable,TableFragment.newInstance(tables[5]))
-                .commit()
+            vpTable.currentItem = 5
         }
         tvSeven.setOnClickListener {
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.flTable,TableFragment.newInstance(tables[6]))
-                .commit()
+            vpTable.currentItem = 6
         }
         tvEight.setOnClickListener {
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.flTable,TableFragment.newInstance(tables[7]))
-                .commit()
+            vpTable.currentItem = 7
         }
         tvNine.setOnClickListener {
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.flTable,TableFragment.newInstance(tables[8]))
-                .commit()
+            vpTable.currentItem = 8
         }
         tvTen.setOnClickListener {
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.flTable,TableFragment.newInstance(tables[9]))
-                .commit()
+            vpTable.currentItem = 9
         }
-
-        tvHello.setOnClickListener {
-            vpTable.adapter = TableAdapter(tables,supportFragmentManager)
-        }
-    }
+            }
 
     fun getTables(): ArrayList<Numbers>{
         val tables = ArrayList<Numbers>()
