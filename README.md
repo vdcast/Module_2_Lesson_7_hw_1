@@ -3,7 +3,7 @@
 
 ViewPager.
 
-**Technical task:**
+**Task:**
 
 Convert the multiplication table from previous lesson to ViewPager so that you can slide right, left and open different multiplication tables.
 
